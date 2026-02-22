@@ -336,6 +336,40 @@
       border-color: rgba(11, 90, 84, 0.5);
     }
 
+    .linkedin-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .linkedin-card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.01), rgba(15, 23, 42, 0.03));
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      min-height: 220px;
+    }
+
+    .linkedin-card h3 {
+      margin: 12px 0 8px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    .linkedin-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .linkedin-card .project-link {
+      margin-top: auto;
+      padding-top: 14px;
+    }
+
     .profile-content {
       margin-top: 16px;
       display: grid;
@@ -421,6 +455,10 @@
       }
 
       .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .linkedin-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -546,6 +584,7 @@
       <nav class="nav-links">
         <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
         <a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a>
+        <a href="#linkedin" data-i18n="nav_linkedin">LinkedIn</a>
         <a href="#perfil" data-i18n="nav_perfil">Perfil</a>
         <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
       </nav>
@@ -620,6 +659,52 @@
       </div>
     </section>
 
+    <section id="linkedin" class="reveal">
+      <h2 data-i18n="linkedin_title">Últimos posts en LinkedIn</h2>
+      <p class="section-intro" data-i18n="linkedin_intro">Publico actualizaciones sobre producto, IA y growth. Aquí tienes acceso directo a mis publicaciones recientes.</p>
+
+      <div class="linkedin-grid stagger">
+        <article class="linkedin-card">
+          <span class="chip" data-i18n="linkedin_card1_chip">LinkedIn · Feed</span>
+          <h3 data-i18n="linkedin_card1_title">Actividad reciente</h3>
+          <p data-i18n="linkedin_card1_desc">Vista general con mis publicaciones más recientes.</p>
+          <a
+            class="project-link"
+            href="https://www.linkedin.com/in/joel-balague-85030423/recent-activity/all/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="linkedin_card1_link"
+          >Ver actividad</a>
+        </article>
+
+        <article class="linkedin-card">
+          <span class="chip" data-i18n="linkedin_card2_chip">LinkedIn · Posts</span>
+          <h3 data-i18n="linkedin_card2_title">Publicaciones</h3>
+          <p data-i18n="linkedin_card2_desc">Listado de posts del perfil para ver los últimos contenidos.</p>
+          <a
+            class="project-link"
+            href="https://www.linkedin.com/in/joel-balague-85030423/details/recent-activity/posts/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="linkedin_card2_link"
+          >Ver posts</a>
+        </article>
+
+        <article class="linkedin-card">
+          <span class="chip" data-i18n="linkedin_card3_chip">LinkedIn · Profile</span>
+          <h3 data-i18n="linkedin_card3_title">Perfil completo</h3>
+          <p data-i18n="linkedin_card3_desc">Acceso a mi perfil para explorar experiencia, posts y actividad.</p>
+          <a
+            class="project-link"
+            href="https://www.linkedin.com/in/joel-balague-85030423/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="linkedin_card3_link"
+          >Abrir perfil</a>
+        </article>
+      </div>
+    </section>
+
     <section id="perfil" class="reveal">
       <h2 data-i18n="profile_title">Perfil profesional</h2>
       <div class="profile-content">
@@ -659,6 +744,7 @@
       es: {
         nav_inicio: 'Inicio',
         nav_proyectos: 'Proyectos',
+        nav_linkedin: 'LinkedIn',
         nav_perfil: 'Perfil',
         nav_contacto: 'Contacto',
         hero_kicker: 'Founder · iOS & AI Products',
@@ -685,6 +771,20 @@
         project_visual_caption: 'Captura real del producto (febrero 2026)',
         project1_alt: 'Captura de GoDiet en la App Store.',
         project2_alt: 'Captura de la home de MagicAd.ai.',
+        linkedin_title: 'Últimos posts en LinkedIn',
+        linkedin_intro: 'Publico actualizaciones sobre producto, IA y growth. Aquí tienes acceso directo a mis publicaciones recientes.',
+        linkedin_card1_chip: 'LinkedIn · Feed',
+        linkedin_card1_title: 'Actividad reciente',
+        linkedin_card1_desc: 'Vista general con mis publicaciones más recientes.',
+        linkedin_card1_link: 'Ver actividad',
+        linkedin_card2_chip: 'LinkedIn · Posts',
+        linkedin_card2_title: 'Publicaciones',
+        linkedin_card2_desc: 'Listado de posts del perfil para ver los últimos contenidos.',
+        linkedin_card2_link: 'Ver posts',
+        linkedin_card3_chip: 'LinkedIn · Profile',
+        linkedin_card3_title: 'Perfil completo',
+        linkedin_card3_desc: 'Acceso a mi perfil para explorar experiencia, posts y actividad.',
+        linkedin_card3_link: 'Abrir perfil',
         profile_title: 'Perfil profesional',
         profile_text: 'Ingeniero Industrial y emprendedor de producto digital. Combino estrategia, ejecución y analítica para lanzar y mejorar productos iOS y plataformas de IA orientadas a negocio.',
         profile_focus_title: 'Focus areas',
@@ -700,6 +800,7 @@
       en: {
         nav_inicio: 'Home',
         nav_proyectos: 'Projects',
+        nav_linkedin: 'LinkedIn',
         nav_perfil: 'Profile',
         nav_contacto: 'Contact',
         hero_kicker: 'Founder · iOS & AI Products',
@@ -726,6 +827,20 @@
         project_visual_caption: 'Real product screenshot (February 2026)',
         project1_alt: 'Screenshot of GoDiet on Apple App Store.',
         project2_alt: 'Screenshot of MagicAd.ai homepage.',
+        linkedin_title: 'Latest LinkedIn posts',
+        linkedin_intro: 'I share updates about product, AI, and growth. Here is direct access to my recent publications.',
+        linkedin_card1_chip: 'LinkedIn · Feed',
+        linkedin_card1_title: 'Recent activity',
+        linkedin_card1_desc: 'Overview of my most recent LinkedIn publications.',
+        linkedin_card1_link: 'View activity',
+        linkedin_card2_chip: 'LinkedIn · Posts',
+        linkedin_card2_title: 'Posts',
+        linkedin_card2_desc: 'Profile posts list to check the latest published content.',
+        linkedin_card2_link: 'View posts',
+        linkedin_card3_chip: 'LinkedIn · Profile',
+        linkedin_card3_title: 'Full profile',
+        linkedin_card3_desc: 'Open my profile to explore experience, posts, and activity.',
+        linkedin_card3_link: 'Open profile',
         profile_title: 'Professional profile',
         profile_text: 'Industrial Engineer and digital product founder. I combine strategy, execution, and analytics to launch and improve iOS products and AI platforms with business impact.',
         profile_focus_title: 'Focus areas',
