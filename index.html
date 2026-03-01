@@ -243,6 +243,76 @@
       font-size: 17px;
     }
 
+    .maddogg-card {
+      margin-top: 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(15, 118, 110, 0.04), rgba(15, 23, 42, 0.02));
+      padding: 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+      gap: 18px;
+      align-items: center;
+    }
+
+    .maddogg-card h3 {
+      margin: 12px 0 10px;
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+    }
+
+    .maddogg-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .maddogg-list {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+
+    .maddogg-list li {
+      margin: 6px 0;
+    }
+
+    .maddogg-brands {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 14px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .brand-logo-wrap {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      background: #ffffff;
+    }
+
+    .brand-logo {
+      width: 100%;
+      max-width: 230px;
+      max-height: 42px;
+      object-fit: contain;
+    }
+
+    .maddogg-note {
+      margin: 0;
+      color: var(--muted);
+      font: 500 11px/1.4 var(--mono);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
     .project-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -450,6 +520,10 @@
     }
 
     @media (max-width: 1024px) {
+      .maddogg-card {
+        grid-template-columns: 1fr;
+      }
+
       .profile-content {
         grid-template-columns: 1fr;
       }
@@ -583,6 +657,7 @@
       <a class="brand" href="#inicio">Joel Balagué</a>
       <nav class="nav-links">
         <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
+        <a href="#maddogg" data-i18n="nav_maddogg">Mad Dogg</a>
         <a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a>
         <a href="#linkedin" data-i18n="nav_linkedin">LinkedIn</a>
         <a href="#perfil" data-i18n="nav_perfil">Perfil</a>
@@ -603,6 +678,31 @@
       <div class="cta-row">
         <a class="btn primary" href="https://www.linkedin.com/in/joel-balague-85030423/" target="_blank" rel="noopener noreferrer" data-i18n="cta_linkedin">Escribirme por LinkedIn</a>
         <a class="btn secondary" href="mailto:joelbalague@mac.com?subject=Website%20contact" data-i18n="cta_email">Enviar email</a>
+      </div>
+    </section>
+
+    <section id="maddogg" class="reveal">
+      <h2 data-i18n="maddogg_section_title">Actividad principal</h2>
+      <div class="maddogg-card">
+        <div>
+          <span class="chip" data-i18n="maddogg_chip">Mad Dogg Athletics</span>
+          <h3 data-i18n="maddogg_title">Apps &amp; Home Market Lead en Mad Dogg Athletics</h3>
+          <p data-i18n="maddogg_desc">Esta es mi actividad laboral principal: lidero el desarrollo del canal digital y de mercado en la categoría de Apps &amp; Home para las marcas de referencia del grupo.</p>
+          <ul class="maddogg-list">
+            <li data-i18n="maddogg_point_1">Gestión y crecimiento de iniciativas de producto y negocio digital.</li>
+            <li data-i18n="maddogg_point_2">Ejecución transversal entre marketing, operaciones y performance.</li>
+            <li data-i18n="maddogg_point_3">Enfoque en resultados de negocio sostenibles y de largo plazo.</li>
+          </ul>
+        </div>
+        <aside class="maddogg-brands" aria-label="Mad Dogg Athletics brands">
+          <div class="brand-logo-wrap">
+            <img class="brand-logo" src="img/logo-spinning.svg" alt="Logo de Spinning." data-i18n-alt="maddogg_logo_spinning_alt" loading="eager" decoding="async">
+          </div>
+          <div class="brand-logo-wrap">
+            <img class="brand-logo" src="img/logo-peakpilates.svg" alt="Logo de Peak Pilates." data-i18n-alt="maddogg_logo_peak_alt" loading="eager" decoding="async">
+          </div>
+          <p class="maddogg-note" data-i18n="maddogg_logo_note">Spinning &amp; Peak Pilates · Mad Dogg Athletics</p>
+        </aside>
       </div>
     </section>
 
@@ -743,6 +843,7 @@
     const i18n = {
       es: {
         nav_inicio: 'Inicio',
+        nav_maddogg: 'Mad Dogg',
         nav_proyectos: 'Proyectos',
         nav_linkedin: 'LinkedIn',
         nav_perfil: 'Perfil',
@@ -752,6 +853,16 @@
         hero_intro: 'Desarrollo productos digitales con enfoque práctico y medible: GoDiet para seguimiento nutricional asistido por IA y MagicAd.ai para optimización de ROAS en Shopify.',
         cta_linkedin: 'Escribirme por LinkedIn',
         cta_email: 'Enviar email',
+        maddogg_section_title: 'Actividad principal',
+        maddogg_chip: 'Mad Dogg Athletics',
+        maddogg_title: 'Apps & Home Market Lead en Mad Dogg Athletics',
+        maddogg_desc: 'Esta es mi actividad laboral principal: lidero el desarrollo del canal digital y de mercado en la categoría de Apps & Home para las marcas de referencia del grupo.',
+        maddogg_point_1: 'Gestión y crecimiento de iniciativas de producto y negocio digital.',
+        maddogg_point_2: 'Ejecución transversal entre marketing, operaciones y performance.',
+        maddogg_point_3: 'Enfoque en resultados de negocio sostenibles y de largo plazo.',
+        maddogg_logo_spinning_alt: 'Logo de Spinning.',
+        maddogg_logo_peak_alt: 'Logo de Peak Pilates.',
+        maddogg_logo_note: 'Spinning & Peak Pilates · Mad Dogg Athletics',
         projects_title: 'Proyectos',
         projects_intro: 'Dos productos enfocados en rendimiento: salud digital en iOS y optimización de marketing para ecommerce.',
         project1_chip: 'iOS App',
@@ -799,6 +910,7 @@
       },
       en: {
         nav_inicio: 'Home',
+        nav_maddogg: 'Mad Dogg',
         nav_proyectos: 'Projects',
         nav_linkedin: 'LinkedIn',
         nav_perfil: 'Profile',
@@ -808,6 +920,16 @@
         hero_intro: 'I build practical, measurable digital products: GoDiet for AI-assisted nutrition tracking and MagicAd.ai for ROAS optimization in Shopify.',
         cta_linkedin: 'Message me on LinkedIn',
         cta_email: 'Send email',
+        maddogg_section_title: 'Primary role',
+        maddogg_chip: 'Mad Dogg Athletics',
+        maddogg_title: 'Apps & Home Market Lead at Mad Dogg Athletics',
+        maddogg_desc: 'This is my main professional activity: I lead digital channel and market development for the Apps & Home category across the group flagship brands.',
+        maddogg_point_1: 'Ownership of digital product and business growth initiatives.',
+        maddogg_point_2: 'Cross-functional execution across marketing, operations, and performance.',
+        maddogg_point_3: 'Focus on long-term and sustainable business outcomes.',
+        maddogg_logo_spinning_alt: 'Spinning logo.',
+        maddogg_logo_peak_alt: 'Peak Pilates logo.',
+        maddogg_logo_note: 'Spinning & Peak Pilates · Mad Dogg Athletics',
         projects_title: 'Projects',
         projects_intro: 'Two products focused on performance: digital health on iOS and marketing optimization for ecommerce.',
         project1_chip: 'iOS App',
