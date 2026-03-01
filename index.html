@@ -249,13 +249,24 @@
       background: linear-gradient(180deg, rgba(15, 118, 110, 0.04), rgba(15, 23, 42, 0.02));
       padding: 22px;
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+      grid-template-columns: 1fr;
       gap: 18px;
-      align-items: center;
+      align-items: start;
+    }
+
+    .maddogg-main-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .maddogg-main-head-copy {
+      min-width: 0;
     }
 
     .maddogg-main h2 {
-      margin: 12px 0 10px;
+      margin: 10px 0 0;
       font-size: clamp(26px, 3.2vw, 34px);
       line-height: 1.2;
       letter-spacing: -0.015em;
@@ -277,32 +288,35 @@
     }
 
     .maddogg-brand-row {
-      margin-top: 16px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .brand-logo-wrap {
       border: 1px solid var(--line);
       border-radius: 10px;
-      min-height: 78px;
+      width: 102px;
+      min-height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 12px;
+      padding: 8px 10px;
       background: #ffffff;
     }
 
     .brand-logo {
       width: 100%;
-      max-width: 230px;
-      max-height: 42px;
+      max-width: 82px;
+      max-height: 22px;
       object-fit: contain;
     }
 
     .maddogg-note {
-      margin: 0;
+      margin: 10px 0 0;
       color: var(--muted);
       font: 500 11px/1.4 var(--mono);
       letter-spacing: 0.05em;
@@ -312,8 +326,8 @@
 
     .maddogg-gallery {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
+      grid-template-columns: 1fr;
+      gap: 16px;
       align-items: start;
     }
 
@@ -323,15 +337,13 @@
       border-radius: 12px;
       overflow: hidden;
       background: #f4f7fb;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
     }
 
     .maddogg-media img {
       display: block;
       width: 100%;
-      height: 260px;
-      object-fit: cover;
-      object-position: top center;
+      height: auto;
       background: #eef3fb;
     }
 
@@ -553,14 +565,6 @@
     }
 
     @media (max-width: 1024px) {
-      .maddogg-card {
-        grid-template-columns: 1fr;
-      }
-
-      .maddogg-gallery {
-        grid-template-columns: 1fr;
-      }
-
       .profile-content {
         grid-template-columns: 1fr;
       }
@@ -593,6 +597,14 @@
       .hero {
         padding: 24px;
       }
+
+      .maddogg-main-head {
+        flex-direction: column;
+      }
+
+      .maddogg-brand-row {
+        justify-content: flex-start;
+      }
     }
 
     @media (max-width: 480px) {
@@ -618,9 +630,6 @@
         min-height: 0;
       }
 
-      .maddogg-media img {
-        height: 200px;
-      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -715,28 +724,32 @@
     <section id="maddogg" class="reveal" aria-label="Mad Dogg Athletics">
       <div class="maddogg-card">
         <div class="maddogg-main">
-          <span class="chip" data-i18n="maddogg_chip">Mad Dogg Athletics</span>
-          <h2 data-i18n="maddogg_title">Apps &amp; Home Market Lead en Mad Dogg Athletics</h2>
+          <div class="maddogg-main-head">
+            <div class="maddogg-main-head-copy">
+              <span class="chip" data-i18n="maddogg_chip">Mad Dogg Athletics</span>
+              <h2 data-i18n="maddogg_title">Apps &amp; Home Market Lead en Mad Dogg Athletics</h2>
+            </div>
+            <div class="maddogg-brand-row" aria-label="Mad Dogg Athletics brands">
+              <div class="brand-logo-wrap">
+                <img class="brand-logo" src="img/logo-spinning.svg" alt="Logo de Spinning." data-i18n-alt="maddogg_logo_spinning_alt" loading="eager" decoding="async">
+              </div>
+              <div class="brand-logo-wrap">
+                <img class="brand-logo" src="img/logo-peakpilates.svg" alt="Logo de Peak Pilates." data-i18n-alt="maddogg_logo_peak_alt" loading="eager" decoding="async">
+              </div>
+            </div>
+          </div>
           <p data-i18n="maddogg_desc">Esta es mi actividad laboral principal: lidero el desarrollo del canal digital y de mercado en la categoría de Apps &amp; Home para las marcas de referencia del grupo.</p>
           <ul class="maddogg-list">
             <li data-i18n="maddogg_point_1">Gestión y crecimiento de iniciativas de producto y negocio digital.</li>
             <li data-i18n="maddogg_point_2">Ejecución transversal entre marketing, operaciones y performance.</li>
             <li data-i18n="maddogg_point_3">Enfoque en resultados de negocio sostenibles y de largo plazo.</li>
           </ul>
-          <div class="maddogg-brand-row" aria-label="Mad Dogg Athletics brands">
-            <div class="brand-logo-wrap">
-              <img class="brand-logo" src="img/logo-spinning.svg" alt="Logo de Spinning." data-i18n-alt="maddogg_logo_spinning_alt" loading="eager" decoding="async">
-            </div>
-            <div class="brand-logo-wrap">
-              <img class="brand-logo" src="img/logo-peakpilates.svg" alt="Logo de Peak Pilates." data-i18n-alt="maddogg_logo_peak_alt" loading="eager" decoding="async">
-            </div>
-          </div>
           <p class="maddogg-note" data-i18n="maddogg_logo_note">Spinning &amp; Peak Pilates · Mad Dogg Athletics</p>
         </div>
         <div class="maddogg-gallery stagger" aria-label="Mad Dogg Athletics product visuals">
           <figure class="maddogg-media">
             <img
-              src="img/maddogg-spinning-studioconnect.jpg"
+              src="img/maddogg-spinning-studioconnect.png"
               alt="Captura de Spinning StudioConnect."
               data-i18n-alt="maddogg_image_spinning_alt"
               loading="lazy"
@@ -746,7 +759,7 @@
           </figure>
           <figure class="maddogg-media">
             <img
-              src="img/maddogg-peakpilates-studioconnect.jpg"
+              src="img/maddogg-peakpilates-studioconnect.png"
               alt="Captura de Pilates StudioConnect."
               data-i18n-alt="maddogg_image_peak_alt"
               loading="lazy"
