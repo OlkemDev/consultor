@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Joel Balagué · Founder de GoDiet y MagicAd.ai</title>
-  <meta name="description" id="meta-description" content="Founder de GoDiet y MagicAd.ai. Productos de iOS e inteligencia artificial orientados a resultados medibles.">
+  <title>Joel Balagué · AI360Layer, GoDiet y MagicAd.ai</title>
+  <meta name="description" id="meta-description" content="Founder de productos de IA como AI360Layer, GoDiet y MagicAd.ai, orientados a resultados medibles y decisiones de negocio.">
   <link rel="canonical" href="https://joelbalague.com/">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <meta property="og:title" id="meta-og-title" content="Joel Balagué · Founder de GoDiet y MagicAd.ai">
-  <meta property="og:description" id="meta-og-description" content="Productos de iOS e inteligencia artificial orientados a resultados medibles.">
+  <meta property="og:title" id="meta-og-title" content="Joel Balagué · AI360Layer, GoDiet y MagicAd.ai">
+  <meta property="og:description" id="meta-og-description" content="Productos de IA, iOS y marketing orientados a resultados medibles y decisiones de negocio.">
   <meta property="og:image" content="https://joelbalague.com/og.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://joelbalague.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" id="meta-twitter-title" content="Joel Balagué · Founder de GoDiet y MagicAd.ai">
-  <meta name="twitter:description" id="meta-twitter-description" content="Productos de iOS e inteligencia artificial orientados a resultados medibles.">
+  <meta name="twitter:title" id="meta-twitter-title" content="Joel Balagué · AI360Layer, GoDiet y MagicAd.ai">
+  <meta name="twitter:description" id="meta-twitter-description" content="Productos de IA, iOS y marketing orientados a resultados medibles y decisiones de negocio.">
   <meta name="theme-color" content="#f5f7fb">
   <link rel="icon" href="/favicon.ico">
 
@@ -358,6 +358,87 @@
       text-transform: uppercase;
     }
 
+    .featured-project {
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .featured-project-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 24px;
+      align-items: center;
+      padding: 34px;
+    }
+
+    .featured-project-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .featured-project-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      color: #ffffff;
+      background: #2f4a3d;
+      font: 700 13px/1 var(--mono);
+    }
+
+    .featured-project h2 {
+      margin: 0;
+      font-size: 36px;
+      line-height: 1.12;
+    }
+
+    .featured-project p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .featured-list {
+      margin: 16px 0 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+
+    .featured-list li {
+      margin: 6px 0;
+    }
+
+    .featured-visual {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f3f0e9;
+    }
+
+    .featured-shot {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f3f0e9;
+    }
+
+    .featured-caption {
+      margin: 0;
+      padding: 9px 12px 10px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: #ffffff;
+      font: 500 11px/1.4 var(--mono);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
     .project-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -565,6 +646,10 @@
     }
 
     @media (max-width: 1024px) {
+      .featured-project-shell {
+        grid-template-columns: 1fr;
+      }
+
       .profile-content {
         grid-template-columns: 1fr;
       }
@@ -595,6 +680,14 @@
 
       section,
       .hero {
+        padding: 24px;
+      }
+
+      .featured-project {
+        padding: 0;
+      }
+
+      .featured-project-shell {
         padding: 24px;
       }
 
@@ -630,6 +723,10 @@
         min-height: 0;
       }
 
+      .featured-project h2 {
+        font-size: 30px;
+      }
+
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -654,7 +751,7 @@
     "@type": "Person",
     "name": "Joel Balagué",
     "jobTitle": "Founder",
-    "description": "Founder de GoDiet y MagicAd.ai. Desarrollo productos de iOS e inteligencia artificial orientados a resultados medibles.",
+    "description": "Founder de productos de IA como AI360Layer, GoDiet y MagicAd.ai. Desarrollo productos de iOS, inteligencia artificial y decision intelligence orientados a resultados medibles.",
     "email": "mailto:joelbalague@mac.com",
     "url": "https://joelbalague.com/",
     "sameAs": [
@@ -663,11 +760,23 @@
     "knowsAbout": [
       "iOS product development",
       "AI-powered applications",
+      "AI business consulting",
+      "business decision intelligence",
       "nutrition technology",
       "marketing analytics",
       "ROAS optimization",
       "Shopify ecosystem"
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI360Layer",
+    "serviceType": "AI business consulting",
+    "url": "https://ai360layer.com/",
+    "description": "Consultoría AI para decisiones de negocio. Convierte datos dispersos en decisiones accionables conectando herramientas, contexto y prioridades."
   }
   </script>
   <script type="application/ld+json">
@@ -708,6 +817,7 @@
       <nav class="nav-links">
         <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
         <a href="#maddogg" data-i18n="nav_maddogg">Mad Dogg</a>
+        <a href="#ai360layer" data-i18n="nav_ai360layer">AI360Layer</a>
         <a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a>
         <a href="#linkedin" data-i18n="nav_linkedin">LinkedIn</a>
         <a href="#perfil" data-i18n="nav_perfil">Perfil</a>
@@ -772,18 +882,50 @@
     </section>
 
     <section class="hero reveal">
-      <span class="kicker" data-i18n="hero_kicker">Founder · iOS &amp; AI Products</span>
-      <h1 data-i18n="hero_title">Founder de GoDiet y MagicAd.ai: productos de IA orientados a resultados.</h1>
-      <p data-i18n="hero_intro">Desarrollo productos digitales con enfoque práctico y medible: GoDiet para seguimiento nutricional asistido por IA y MagicAd.ai para optimización de ROAS en Shopify.</p>
+      <span class="kicker" data-i18n="hero_kicker">Founder · AI, iOS &amp; Business Products</span>
+      <h1 data-i18n="hero_title">Construyo productos de IA orientados a resultados: AI360Layer, GoDiet y MagicAd.ai.</h1>
+      <p data-i18n="hero_intro">Desarrollo productos digitales con enfoque práctico y medible: AI360Layer para decisiones de negocio con IA, GoDiet para seguimiento nutricional asistido por IA y MagicAd.ai para optimización de ROAS en Shopify.</p>
       <div class="cta-row">
         <a class="btn primary" href="https://www.linkedin.com/in/joel-balague-85030423/" target="_blank" rel="noopener noreferrer" data-i18n="cta_linkedin">Escribirme por LinkedIn</a>
         <a class="btn secondary" href="mailto:joelbalague@mac.com?subject=Website%20contact" data-i18n="cta_email">Enviar email</a>
       </div>
     </section>
 
+    <section id="ai360layer" class="featured-project reveal" aria-label="AI360Layer">
+      <div class="featured-project-shell">
+        <div>
+          <div class="featured-project-meta">
+            <span class="featured-project-mark" aria-hidden="true">360</span>
+            <span class="chip" data-i18n="ai360_chip">AI Business Layer</span>
+          </div>
+          <h2 data-i18n="ai360_title">AI360Layer</h2>
+          <p data-i18n="ai360_desc">Consultoría AI para convertir datos dispersos en decisiones accionables. Diseñamos una capa sobre las herramientas reales de la empresa para unir datos, contexto y prioridades en una cola clara de acciones.</p>
+          <ul class="featured-list">
+            <li data-i18n="ai360_bullet_1">Conecta ERP, CRM, ecommerce, ads, finanzas y operaciones.</li>
+            <li data-i18n="ai360_bullet_2">Prioriza acciones con impacto en facturación, margen, caja y velocidad.</li>
+            <li data-i18n="ai360_bullet_3">Sprint de negocio AI para pasar de señales dispersas a decisiones visibles.</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn primary" href="https://ai360layer.com/" target="_blank" rel="noopener noreferrer" data-i18n="ai360_link">Visitar AI360Layer</a>
+          </div>
+        </div>
+        <figure class="featured-visual">
+          <img
+            class="featured-shot"
+            src="img/project-ai360layer-real.jpg"
+            alt="Captura de la home de AI360Layer."
+            data-i18n-alt="ai360_alt"
+            loading="eager"
+            decoding="async"
+          >
+          <figcaption class="featured-caption" data-i18n="ai360_caption">Captura real del producto (mayo 2026)</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section id="proyectos" class="reveal">
       <h2 data-i18n="projects_title">Proyectos</h2>
-      <p class="section-intro" data-i18n="projects_intro">Dos productos enfocados en rendimiento: salud digital en iOS y optimización de marketing para ecommerce.</p>
+      <p class="section-intro" data-i18n="projects_intro">Además de AI360Layer, dos productos enfocados en rendimiento: salud digital en iOS y optimización de marketing para ecommerce.</p>
 
       <div class="project-grid stagger">
         <article class="project-card">
@@ -919,13 +1061,14 @@
       es: {
         nav_inicio: 'Inicio',
         nav_maddogg: 'Mad Dogg',
+        nav_ai360layer: 'AI360Layer',
         nav_proyectos: 'Proyectos',
         nav_linkedin: 'LinkedIn',
         nav_perfil: 'Perfil',
         nav_contacto: 'Contacto',
-        hero_kicker: 'Founder · iOS & AI Products',
-        hero_title: 'Founder de GoDiet y MagicAd.ai: productos de IA orientados a resultados.',
-        hero_intro: 'Desarrollo productos digitales con enfoque práctico y medible: GoDiet para seguimiento nutricional asistido por IA y MagicAd.ai para optimización de ROAS en Shopify.',
+        hero_kicker: 'Founder · AI, iOS & Business Products',
+        hero_title: 'Construyo productos de IA orientados a resultados: AI360Layer, GoDiet y MagicAd.ai.',
+        hero_intro: 'Desarrollo productos digitales con enfoque práctico y medible: AI360Layer para decisiones de negocio con IA, GoDiet para seguimiento nutricional asistido por IA y MagicAd.ai para optimización de ROAS en Shopify.',
         cta_linkedin: 'Escribirme por LinkedIn',
         cta_email: 'Enviar email',
         maddogg_chip: 'Mad Dogg Athletics',
@@ -941,8 +1084,17 @@
         maddogg_image_peak_alt: 'Captura de Peak Pilates StudioConnect.',
         maddogg_image_spinning_caption: 'Spinning StudioConnect · Bicicletas conectadas y clases en pantalla.',
         maddogg_image_peak_caption: 'Peak Pilates StudioConnect · Entrenamiento conectado en reformer.',
+        ai360_chip: 'AI Business Layer',
+        ai360_title: 'AI360Layer',
+        ai360_desc: 'Consultoría AI para convertir datos dispersos en decisiones accionables. Diseñamos una capa sobre las herramientas reales de la empresa para unir datos, contexto y prioridades en una cola clara de acciones.',
+        ai360_bullet_1: 'Conecta ERP, CRM, ecommerce, ads, finanzas y operaciones.',
+        ai360_bullet_2: 'Prioriza acciones con impacto en facturación, margen, caja y velocidad.',
+        ai360_bullet_3: 'Sprint de negocio AI para pasar de señales dispersas a decisiones visibles.',
+        ai360_link: 'Visitar AI360Layer',
+        ai360_alt: 'Captura de la home de AI360Layer.',
+        ai360_caption: 'Captura real del producto (mayo 2026)',
         projects_title: 'Proyectos',
-        projects_intro: 'Dos productos enfocados en rendimiento: salud digital en iOS y optimización de marketing para ecommerce.',
+        projects_intro: 'Además de AI360Layer, dos productos enfocados en rendimiento: salud digital en iOS y optimización de marketing para ecommerce.',
         project1_chip: 'iOS App',
         project1_title: 'GoDiet - Calorie Counter',
         project1_desc: 'App de iOS para seguimiento nutricional y pérdida de peso, destacada por usar IA para simplificar el registro de alimentos bajo el enfoque Eat better, not less. Disponible en App Store.',
@@ -975,7 +1127,7 @@
         linkedin_card3_desc: 'Acceso a mi perfil para explorar experiencia, posts y actividad.',
         linkedin_card3_link: 'Abrir perfil',
         profile_title: 'Perfil profesional',
-        profile_text: 'Ingeniero Industrial y emprendedor de producto digital. Combino estrategia, ejecución y analítica para lanzar y mejorar productos iOS y plataformas de IA orientadas a negocio.',
+        profile_text: 'Ingeniero Industrial y emprendedor de producto digital. Combino estrategia, ejecución y analítica para lanzar y mejorar productos iOS, plataformas de IA y capas de decisión orientadas a negocio.',
         profile_focus_title: 'Focus areas',
         profile_focus_1: 'Estrategia y ejecución de producto.',
         profile_focus_2: 'Experiencias iOS orientadas a adopción.',
@@ -984,18 +1136,19 @@
         contact_title: 'Contacto',
         contact_text: 'Canal principal: LinkedIn. También disponible por email para colaboraciones, consultoría de producto y partnerships.',
         contact_note: 'Disponible para colaboraciones de producto, advisory y partnerships.',
-        footer_text: ' Joel Balagué · Founder · iOS & AI Products'
+        footer_text: ' Joel Balagué · Founder · AI, iOS & Business Products'
       },
       en: {
         nav_inicio: 'Home',
         nav_maddogg: 'Mad Dogg',
+        nav_ai360layer: 'AI360Layer',
         nav_proyectos: 'Projects',
         nav_linkedin: 'LinkedIn',
         nav_perfil: 'Profile',
         nav_contacto: 'Contact',
-        hero_kicker: 'Founder · iOS & AI Products',
-        hero_title: 'Founder of GoDiet and MagicAd.ai: AI products built for measurable outcomes.',
-        hero_intro: 'I build practical, measurable digital products: GoDiet for AI-assisted nutrition tracking and MagicAd.ai for ROAS optimization in Shopify.',
+        hero_kicker: 'Founder · AI, iOS & Business Products',
+        hero_title: 'I build outcome-focused AI products: AI360Layer, GoDiet, and MagicAd.ai.',
+        hero_intro: 'I build practical, measurable digital products: AI360Layer for AI-assisted business decisions, GoDiet for AI-assisted nutrition tracking, and MagicAd.ai for ROAS optimization in Shopify.',
         cta_linkedin: 'Message me on LinkedIn',
         cta_email: 'Send email',
         maddogg_chip: 'Mad Dogg Athletics',
@@ -1011,8 +1164,17 @@
         maddogg_image_peak_alt: 'Peak Pilates StudioConnect screenshot.',
         maddogg_image_spinning_caption: 'Spinning StudioConnect · Connected bikes and on-screen classes.',
         maddogg_image_peak_caption: 'Peak Pilates StudioConnect · Connected reformer training.',
+        ai360_chip: 'AI Business Layer',
+        ai360_title: 'AI360Layer',
+        ai360_desc: 'AI consulting to turn scattered data into actionable decisions. We design a layer on top of a company\u0027s real tools to connect data, context, and priorities into a clear action queue.',
+        ai360_bullet_1: 'Connects ERP, CRM, ecommerce, ads, finance, and operations.',
+        ai360_bullet_2: 'Prioritizes actions with impact on revenue, margin, cash, and speed.',
+        ai360_bullet_3: 'AI business sprint to move from scattered signals to visible decisions.',
+        ai360_link: 'Visit AI360Layer',
+        ai360_alt: 'Screenshot of AI360Layer homepage.',
+        ai360_caption: 'Real product screenshot (May 2026)',
         projects_title: 'Projects',
-        projects_intro: 'Two products focused on performance: digital health on iOS and marketing optimization for ecommerce.',
+        projects_intro: 'Beyond AI360Layer, two products focused on performance: digital health on iOS and marketing optimization for ecommerce.',
         project1_chip: 'iOS App',
         project1_title: 'GoDiet - Calorie Counter',
         project1_desc: 'iOS app for nutrition tracking and weight loss, using AI to simplify food logging with an Eat better, not less approach. Available on the App Store.',
@@ -1045,7 +1207,7 @@
         linkedin_card3_desc: 'Open my profile to explore experience, posts, and activity.',
         linkedin_card3_link: 'Open profile',
         profile_title: 'Professional profile',
-        profile_text: 'Industrial Engineer and digital product founder. I combine strategy, execution, and analytics to launch and improve iOS products and AI platforms with business impact.',
+        profile_text: 'Industrial Engineer and digital product founder. I combine strategy, execution, and analytics to launch and improve iOS products, AI platforms, and business decision layers.',
         profile_focus_title: 'Focus areas',
         profile_focus_1: 'Product strategy and execution.',
         profile_focus_2: 'iOS experiences built for adoption.',
@@ -1054,26 +1216,26 @@
         contact_title: 'Contact',
         contact_text: 'Primary channel: LinkedIn. Also available by email for collaborations, product advisory, and partnerships.',
         contact_note: 'Open to product collaborations, advisory work, and partnerships.',
-        footer_text: ' Joel Balagué · Founder · iOS & AI Products'
+        footer_text: ' Joel Balagué · Founder · AI, iOS & Business Products'
       }
     };
 
     const seo = {
       es: {
-        title: 'Joel Balagué · Founder de GoDiet y MagicAd.ai',
-        description: 'Founder de GoDiet y MagicAd.ai. Productos de iOS e inteligencia artificial orientados a resultados medibles.',
-        ogTitle: 'Joel Balagué · Founder de GoDiet y MagicAd.ai',
-        ogDescription: 'Productos de iOS e inteligencia artificial orientados a resultados medibles.',
-        twitterTitle: 'Joel Balagué · Founder de GoDiet y MagicAd.ai',
-        twitterDescription: 'Productos de iOS e inteligencia artificial orientados a resultados medibles.'
+        title: 'Joel Balagué · AI360Layer, GoDiet y MagicAd.ai',
+        description: 'Founder de productos de IA como AI360Layer, GoDiet y MagicAd.ai, orientados a resultados medibles y decisiones de negocio.',
+        ogTitle: 'Joel Balagué · AI360Layer, GoDiet y MagicAd.ai',
+        ogDescription: 'Productos de IA, iOS y marketing orientados a resultados medibles y decisiones de negocio.',
+        twitterTitle: 'Joel Balagué · AI360Layer, GoDiet y MagicAd.ai',
+        twitterDescription: 'Productos de IA, iOS y marketing orientados a resultados medibles y decisiones de negocio.'
       },
       en: {
-        title: 'Joel Balagué · Founder of GoDiet and MagicAd.ai',
-        description: 'Founder of GoDiet and MagicAd.ai. iOS and AI products focused on measurable outcomes.',
-        ogTitle: 'Joel Balagué · Founder of GoDiet and MagicAd.ai',
-        ogDescription: 'iOS and AI products focused on measurable outcomes.',
-        twitterTitle: 'Joel Balagué · Founder of GoDiet and MagicAd.ai',
-        twitterDescription: 'iOS and AI products focused on measurable outcomes.'
+        title: 'Joel Balagué · AI360Layer, GoDiet and MagicAd.ai',
+        description: 'Founder of AI products including AI360Layer, GoDiet, and MagicAd.ai, focused on measurable outcomes and business decisions.',
+        ogTitle: 'Joel Balagué · AI360Layer, GoDiet and MagicAd.ai',
+        ogDescription: 'AI, iOS, and marketing products focused on measurable outcomes and business decisions.',
+        twitterTitle: 'Joel Balagué · AI360Layer, GoDiet and MagicAd.ai',
+        twitterDescription: 'AI, iOS, and marketing products focused on measurable outcomes and business decisions.'
       }
     };
 
