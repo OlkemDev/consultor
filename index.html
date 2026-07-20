@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joel Balagué · AI360Layer, GoDiet y MagicAd.ai</title>
-  <meta name="description" id="meta-description" content="Founder de productos de IA como AI360Layer, GoDiet y MagicAd.ai, orientados a resultados medibles y decisiones de negocio.">
+  <meta name="description" id="meta-description" content="Founder de AI360Layer, OpenAI Select Partner, GoDiet y MagicAd.ai: productos de IA orientados a resultados medibles y decisiones de negocio.">
   <link rel="canonical" href="https://joelbalague.com/">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta property="og:title" id="meta-og-title" content="Joel Balagué · AI360Layer, GoDiet y MagicAd.ai">
@@ -403,6 +403,40 @@
       font-size: 17px;
     }
 
+    .openai-partner-proof {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 20px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .openai-partner-badge {
+      display: block;
+      width: 104px;
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .openai-partner-copy {
+      display: grid;
+      gap: 3px;
+    }
+
+    .openai-partner-copy strong {
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .openai-partner-copy span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
     .featured-list {
       margin: 16px 0 0;
       padding-left: 18px;
@@ -491,7 +525,7 @@
     }
 
     .project-visual {
-      margin-top: 16px;
+      margin: 16px 0 0;
       border: 1px solid var(--line);
       border-radius: 12px;
       overflow: hidden;
@@ -501,9 +535,7 @@
     .project-shot {
       display: block;
       width: 100%;
-      aspect-ratio: 16 / 10;
-      object-fit: contain;
-      object-position: center top;
+      height: auto;
       background: #eef3fb;
     }
 
@@ -727,6 +759,14 @@
         font-size: 30px;
       }
 
+      .openai-partner-proof {
+        align-items: flex-start;
+      }
+
+      .openai-partner-badge {
+        width: 88px;
+      }
+
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -776,7 +816,7 @@
     "name": "AI360Layer",
     "serviceType": "AI business consulting",
     "url": "https://ai360layer.com/",
-    "description": "Consultoría AI para decisiones de negocio. Convierte datos dispersos en decisiones accionables conectando herramientas, contexto y prioridades."
+    "description": "OpenAI Select Partner dentro de la OpenAI Partner Network. Consultoría AI para convertir datos dispersos en decisiones accionables conectando herramientas, contexto y prioridades."
   }
   </script>
   <script type="application/ld+json">
@@ -900,6 +940,22 @@
           </div>
           <h2 data-i18n="ai360_title">AI360Layer</h2>
           <p data-i18n="ai360_desc">Consultoría AI para convertir datos dispersos en decisiones accionables. Diseñamos una capa sobre las herramientas reales de la empresa para unir datos, contexto y prioridades en una cola clara de acciones.</p>
+          <div class="openai-partner-proof">
+            <img
+              class="openai-partner-badge"
+              src="img/openai-select-partner.svg"
+              width="375"
+              height="177"
+              alt="OpenAI Select Partner"
+              data-i18n-alt="ai360_partner_alt"
+              loading="eager"
+              decoding="async"
+            >
+            <div class="openai-partner-copy">
+              <strong data-i18n="ai360_partner_title">OpenAI Select Partner</strong>
+              <span data-i18n="ai360_partner_copy">Parte de la OpenAI Partner Network para construir, desplegar y escalar soluciones de IA de negocio de forma responsable y efectiva.</span>
+            </div>
+          </div>
           <ul class="featured-list">
             <li data-i18n="ai360_bullet_1">Conecta ERP, CRM, ecommerce, ads, finanzas y operaciones.</li>
             <li data-i18n="ai360_bullet_2">Prioriza acciones con impacto en facturación, margen, caja y velocidad.</li>
@@ -938,10 +994,12 @@
             <li data-i18n="project1_bullet_3">Enfoque de producto: Eat better, not less.</li>
           </ul>
           <a class="project-link" href="https://apps.apple.com/us/app/godiet-calorie-counter/id6740051259" target="_blank" rel="noopener noreferrer" data-i18n="project1_link">Ver en App Store</a>
-          <figure class="project-visual">
+          <figure class="project-visual project-visual--godiet">
             <img
               class="project-shot"
-              src="img/project-godiet-real.png"
+              src="img/project-godiet-showcase.jpg"
+              width="1280"
+              height="871"
               alt="Captura de GoDiet en la App Store."
               data-i18n-alt="project1_alt"
               loading="eager"
@@ -1087,6 +1145,9 @@
         ai360_chip: 'AI Business Layer',
         ai360_title: 'AI360Layer',
         ai360_desc: 'Consultoría AI para convertir datos dispersos en decisiones accionables. Diseñamos una capa sobre las herramientas reales de la empresa para unir datos, contexto y prioridades en una cola clara de acciones.',
+        ai360_partner_title: 'OpenAI Select Partner',
+        ai360_partner_copy: 'Parte de la OpenAI Partner Network para construir, desplegar y escalar soluciones de IA de negocio de forma responsable y efectiva.',
+        ai360_partner_alt: 'Acreditación OpenAI Select Partner.',
         ai360_bullet_1: 'Conecta ERP, CRM, ecommerce, ads, finanzas y operaciones.',
         ai360_bullet_2: 'Prioriza acciones con impacto en facturación, margen, caja y velocidad.',
         ai360_bullet_3: 'Sprint de negocio AI para pasar de señales dispersas a decisiones visibles.',
@@ -1167,6 +1228,9 @@
         ai360_chip: 'AI Business Layer',
         ai360_title: 'AI360Layer',
         ai360_desc: 'AI consulting to turn scattered data into actionable decisions. We design a layer on top of a company\u0027s real tools to connect data, context, and priorities into a clear action queue.',
+        ai360_partner_title: 'OpenAI Select Partner',
+        ai360_partner_copy: 'Part of the OpenAI Partner Network, building, deploying, and scaling business AI solutions responsibly and effectively.',
+        ai360_partner_alt: 'OpenAI Select Partner recognition.',
         ai360_bullet_1: 'Connects ERP, CRM, ecommerce, ads, finance, and operations.',
         ai360_bullet_2: 'Prioritizes actions with impact on revenue, margin, cash, and speed.',
         ai360_bullet_3: 'AI business sprint to move from scattered signals to visible decisions.',
@@ -1223,7 +1287,7 @@
     const seo = {
       es: {
         title: 'Joel Balagué · AI360Layer, GoDiet y MagicAd.ai',
-        description: 'Founder de productos de IA como AI360Layer, GoDiet y MagicAd.ai, orientados a resultados medibles y decisiones de negocio.',
+        description: 'Founder de AI360Layer, OpenAI Select Partner, GoDiet y MagicAd.ai: productos de IA orientados a resultados medibles y decisiones de negocio.',
         ogTitle: 'Joel Balagué · AI360Layer, GoDiet y MagicAd.ai',
         ogDescription: 'Productos de IA, iOS y marketing orientados a resultados medibles y decisiones de negocio.',
         twitterTitle: 'Joel Balagué · AI360Layer, GoDiet y MagicAd.ai',
@@ -1231,7 +1295,7 @@
       },
       en: {
         title: 'Joel Balagué · AI360Layer, GoDiet and MagicAd.ai',
-        description: 'Founder of AI products including AI360Layer, GoDiet, and MagicAd.ai, focused on measurable outcomes and business decisions.',
+        description: 'Founder of AI360Layer, an OpenAI Select Partner, GoDiet, and MagicAd.ai: AI products focused on measurable outcomes and business decisions.',
         ogTitle: 'Joel Balagué · AI360Layer, GoDiet and MagicAd.ai',
         ogDescription: 'AI, iOS, and marketing products focused on measurable outcomes and business decisions.',
         twitterTitle: 'Joel Balagué · AI360Layer, GoDiet and MagicAd.ai',
