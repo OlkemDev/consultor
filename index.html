@@ -408,9 +408,8 @@
       align-items: center;
       gap: 14px;
       margin-top: 20px;
-      padding: 14px 0;
+      padding: 14px 0 15px;
       border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
     }
 
     .openai-partner-badge {
@@ -435,6 +434,76 @@
       color: var(--muted);
       font-size: 13px;
       line-height: 1.45;
+    }
+
+    .openai-credential {
+      display: grid;
+      grid-template-columns: 132px minmax(0, 1fr);
+      gap: 16px;
+      align-items: center;
+      padding: 15px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .openai-credential-preview {
+      display: block;
+      overflow: hidden;
+      background: #f3f6fb;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .openai-credential-preview img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .openai-credential-copy {
+      min-width: 0;
+    }
+
+    .openai-credential-kicker {
+      display: block;
+      color: var(--accent);
+      font: 600 10px/1.2 var(--mono);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .openai-credential-copy strong {
+      display: block;
+      margin-top: 5px;
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .openai-credential-copy p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .openai-credential-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--accent-strong);
+      border-bottom: 1px solid currentColor;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .openai-credential-link::after {
+      margin-left: 5px;
+      content: "\2197";
+    }
+
+    .openai-credential-link:hover {
+      color: var(--accent);
     }
 
     .featured-list {
@@ -767,6 +836,11 @@
         width: 88px;
       }
 
+      .openai-credential {
+        grid-template-columns: 104px minmax(0, 1fr);
+        gap: 12px;
+      }
+
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -954,6 +1028,36 @@
             <div class="openai-partner-copy">
               <strong data-i18n="ai360_partner_title">OpenAI Select Partner</strong>
               <span data-i18n="ai360_partner_copy">Parte de la OpenAI Partner Network para construir, desplegar y escalar soluciones de IA de negocio de forma responsable y efectiva.</span>
+            </div>
+          </div>
+          <div class="openai-credential">
+            <a
+              class="openai-credential-preview"
+              href="img/openai-consultative-solutions-practitioner-certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="img/openai-consultative-solutions-practitioner-certificate.png"
+                width="1200"
+                height="848"
+                alt="Certificado de OpenAI Consultative Solutions Practitioner otorgado a Joel Balagué."
+                data-i18n-alt="ai360_credential_alt"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
+            <div class="openai-credential-copy">
+              <span class="openai-credential-kicker" data-i18n="ai360_credential_kicker">Credencial individual</span>
+              <strong data-i18n="ai360_credential_title">OpenAI Consultative Solutions Practitioner</strong>
+              <p data-i18n="ai360_credential_copy">Formación de OpenAI completada por Joel Balagué a través del programa de partners, centrada en casos de uso de IA orientados a negocio.</p>
+              <a
+                class="openai-credential-link"
+                href="img/openai-consultative-solutions-practitioner-certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="ai360_credential_link"
+              >Ver certificado</a>
             </div>
           </div>
           <ul class="featured-list">
@@ -1148,6 +1252,11 @@
         ai360_partner_title: 'OpenAI Select Partner',
         ai360_partner_copy: 'Parte de la OpenAI Partner Network para construir, desplegar y escalar soluciones de IA de negocio de forma responsable y efectiva.',
         ai360_partner_alt: 'Acreditación OpenAI Select Partner.',
+        ai360_credential_kicker: 'Credencial individual',
+        ai360_credential_title: 'OpenAI Consultative Solutions Practitioner',
+        ai360_credential_copy: 'Formación de OpenAI completada por Joel Balagué a través del programa de partners, centrada en casos de uso de IA orientados a negocio.',
+        ai360_credential_link: 'Ver certificado',
+        ai360_credential_alt: 'Certificado de OpenAI Consultative Solutions Practitioner otorgado a Joel Balagué.',
         ai360_bullet_1: 'Conecta ERP, CRM, ecommerce, ads, finanzas y operaciones.',
         ai360_bullet_2: 'Prioriza acciones con impacto en facturación, margen, caja y velocidad.',
         ai360_bullet_3: 'Sprint de negocio AI para pasar de señales dispersas a decisiones visibles.',
@@ -1231,6 +1340,11 @@
         ai360_partner_title: 'OpenAI Select Partner',
         ai360_partner_copy: 'Part of the OpenAI Partner Network, building, deploying, and scaling business AI solutions responsibly and effectively.',
         ai360_partner_alt: 'OpenAI Select Partner recognition.',
+        ai360_credential_kicker: 'Individual credential',
+        ai360_credential_title: 'OpenAI Consultative Solutions Practitioner',
+        ai360_credential_copy: 'OpenAI partner-program training completed by Joel Balagué, focused on business-led AI use cases.',
+        ai360_credential_link: 'View credential',
+        ai360_credential_alt: 'OpenAI Consultative Solutions Practitioner credential awarded to Joel Balagué.',
         ai360_bullet_1: 'Connects ERP, CRM, ecommerce, ads, finance, and operations.',
         ai360_bullet_2: 'Prioritizes actions with impact on revenue, margin, cash, and speed.',
         ai360_bullet_3: 'AI business sprint to move from scattered signals to visible decisions.',
